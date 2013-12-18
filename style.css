@@ -1,76 +1,102 @@
 /*resets css*/
-body, ul, h1, h2, h3, p {
-  margin: 0;
-  padding: 0;
-  font-family: helvetica, sans-serif;
+/*+clearfix {*/
+#header_top_nav:after, #header_bottom_nav:after
+{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	font-size: 0;
 }
-
-#container {
-/*  background-color: grey; */
-  width: 960px;
-  margin:0 auto;
-  padding: 0;
+#header_top_nav, #header_bottom_nav
+{
+	display: inline-block;
 }
-
-#header {
-  /* background-color: lightgreen; */
-  padding: 0;
+#header_top_nav, #header_bottom_nav
+{
+	/*\*/
+	display: block;
+	/**/
+	-height: 1px;
 }
-
-#header_top_nav {
-  background-color: lightred;
+/*+}*/
+BODY, UL, H1, H2, H3, P
+{
+	margin: 0;
+	padding: 0;
+	font-family: helvetica, sans-serif;
 }
-
-#right_nav {
-  /* background-color: yellow; */
-  float: right;
-  width: 300px;
+#container
+{
+	/*background-color: grey;*/
+	width: 960px;
+	margin: 0 auto;
+	padding: 0;
 }
-
-#content {
-  /* background-color: lightgrey; */
-  clear: left;
-  content: 660px;
+#header
+{
+	padding: 0;
+	background-color: #008000;
 }
-
-#footer {
-  /* background-color: lightblue; */
-  clear: left;
+/*[clearfix]*/#header_top_nav
+{
+	background-color: #CC4343;
 }
-
-ul {
-  float: left;
-  list-style-type: none;
-  display: inline;
-
-
+#right_nav
+{
+	float: right;
+	width: 300px;
+	background: #FAF88F;
 }
-
-li {
-  list-style: none;
-  text-decoration: none;
-  padding: 0 5px;
-  display: inline;
-    border-left: 1px solid lightgrey;
+#content
+{
+	/*background-color: lightgrey;*/
+	clear: left;
+	content: 660px;
 }
-
-#page_name {
-  clear: left;
-  border-bottom: 2px solid black;
-  /*float: left;*/
-
+#footer
+{
+	clear: left;
+	background-color: #D3D6E6;
 }
-
-.column {
-  padding: 3px
+UL
+{
+	float: left;
+	list-style-type: none;
+	display: inline;
 }
-
-.column_50r {
-  width: 49%;
-  float: right;
+LI
+{
+	list-style: none;
+	text-decoration: none;
+	padding: 0 5px;
+	display: inline;
+	border-left: 1px solid #D3D3D3;
 }
-.column_50l {
-  width: 49%;
+#page_name
+{
+	clear: left;
+	border-bottom: 2px solid #000000;
+	/*float: left;*/
+	font-size: 36.7pt;
 }
-
-
+.column
+{
+	padding: 2px;
+}
+.column_50r
+{
+	width: 50%;
+	float: right;
+	background-color: #E4E4E5;
+}
+.column_50l
+{
+	width: 50%;
+	background-color: #F7A8D4;
+}
+/*[clearfix]*/#header_bottom_nav
+{
+	background-color: #A4A5E0;
+}
